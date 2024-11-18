@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JavaScript and Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaQuer.css">
+  <title>Ecommerce website</title>
+</head>
+
+<body>
+
+  <!-- header section start from here -->
+
+  <header class="container-fluid">
+    <section class="top-navbar">
+      <div class="top-navbar-row">
+        <div class="head-text">
+          <p>Free shipping, 15-days return or refund.</p>
+        </div>
+        <div class="sign_in_up">
+          <a href="#"> Sign IN /</a>
+          <a href="#"> Sign UP </a>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="./public/logo.PNG" alt="Memo logo" class="logo">
+          </a>
+        </div>
+
+        <ul>
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#products" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#category" class="nav-link">Category</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <input type="text" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-dark position-relative py-0 px-1">
+              <a href="cart.html" class="nav-link-cart-btn" id="cartValue">
+                <i class="fa-solid fa-cart-shopping"> <sup id="cartNum">0</sup></i>
+              </a>
+
+            </button>
+
+
+
+          </li>
+        </ul>
+        <div class="cartItems">
+
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- header section end here -->
+
+  <!-- Start hero home section  -->
+
+  <main class="main-container-fluid">
+    <section class="hero-section">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner bg-dark">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div class="carousel-caption">
+              <h2>Online shopping</h2>
+              <button>Explore Now</button>
+            </div>
+            <div>
+              <img src="./public/shopping-online.jpg" class="d-block w-100" alt="...">
+              <div class="custom-shape-divider-bottom-1731407829">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                  preserveAspectRatio="none">
+                  <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+                </svg>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item " data-bs-interval="2000">
+            <img src="./public/trendy fashion.avif" class="d-block w-100" alt="...">
+            <div class="custom-shape-divider-bottom-1731407829">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"></path>
+              </svg>
+            </div>
+            <div class="carousel-caption">
+              <h2>Online shopping</h2>
+              <button>Explore Now</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./public/trendy clothes.jpg" class="d-block w-100" alt="...">
+            <div class="custom-shape-divider-bottom-1731407829">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"></path>
+              </svg>
+            </div>
+            <div class="carousel-caption">
+              <button>Explore Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./public/winter fashion.webp" class="d-block w-100" alt="...">
+            <div class="custom-shape-divider-bottom-1731407829">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"></path>
+              </svg>
+            </div>
+            <div class="carousel-caption">
+              <button>Explore Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- end home hero section -->
+
+  <!-- start extra product section -->
+
+  <section class="product-container-fluid">
+    <div class="product-row">
+      <div class="product-row-col-1">
+        <div class="extra-text">
+          <h6>New year sale</h6>
+          <h6>Ethnic women's wear</h6>
+          <p>Get And Extra 10% off <button>Shop now</button></p>
+
+        </div>
+        <div class="p-image">
+          <img src="./public/women wear.webp" alt="" width="100px" height="80px">
+        </div>
+      </div>
+      <div class="product-row-col-1">
+        <div class="extra-text">
+          <h6>New year sale</h6>
+          <h6>Winter's wear</h6>
+          <p>Get And Extra 10% off <button>Shop now</button></p>
+
+        </div>
+        <div class="p-image">
+          <img src="./public/winter clothes.jpg" alt="" width="100px" height="80px">
+        </div>
+      </div>
+      <div class="product-row-col-1">
+        <div class="extra-text">
+          <h6>New year sale</h6>
+          <h6>Ethnic men's wear</h6>
+          <p>Get And Extra 10% off <button>Shop now</button></p>
+
+        </div>
+        <div class="p-image">
+          <img src="./public/MEN_S_WEAR_.webp" alt="" width="100px" height="80px">
+        </div>
+      </div>
+      <div class="product-row-col-1">
+        <div class="extra-text">
+          <h6>New year sale</h6>
+          <h6>Kid's wear</h6>
+          <p>Get And Extra 10% off <button>Shop now</button></p>
+
+        </div>
+        <div class="p-image">
+          <img src="./public/boys-girls-ethnic-party-wear.jpg" alt="" width="100px" height="80px">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end extra product section -->
+
+  <!-- about service -->
+
+  <section class="service-container-fluid">
+    <div class="service-row">
+      <div class="service-row-col">
+        <div class="fa-solid-service">
+          <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="extra-text">
+          <p>worldwide shipping<br>order above</p>
+
+        </div>
+
+      </div>
+      <div class="service-row-col">
+        <div class="fa-solid-service">
+          <i class="fa-solid fa-arrows-rotate"></i>
+        </div>
+        <div class="extra-text">
+          <p>Easy 15 days returns<br>Back returns in 7 days</p>
+
+        </div>
+
+      </div>
+      <div class="service-row-col">
+        <div class="fa-solid-service">
+          <i class="fa-solid fa-money-check-dollar"></i>
+        </div>
+        <div class="extra-text">
+          <p>money back guarantee<br>guarantee with in 15 days</p>
+
+        </div>
+
+      </div>
+      <div class="service-row-col">
+        <div class="fa-solid-service">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="extra-text">
+          <p> easy online support<br>24/7 any time support</p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- service section end -->
+
+  <!-- products section start -->
+  <section section_container-fluid>
+    <div id="products">
+      <div class="products-head">
+        <h3>Most Awaited Item's</h3>
+      </div>
+      <div class="product-shop">
+        <div class="card">
+          <img src="./public/card10.webp" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+        <div class="card">
+          <img src="./public/card9.jpg" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+        <div class="card">
+          <img src="./public/card8.webp" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+        <div class="card">
+          <img src="./public/card6.webp" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+        <div class="card">
+          <img src="./public/card11.jpeg" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+        <div class="card">
+          <img src="./public/card3.webp" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+        <div class="card">
+          <img src="./public/card2.jpg" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+        <div class="card">
+          <img src="./public/card12.jpg" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+        <div class="card">
+          <img src="./public/card4.jpg" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+        <div class="card">
+          <img src="./public/card7.jpeg" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+        <div class="card">
+          <img src="./public/card1.webp" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+        <div class="card">
+          <img src="./public/card5.webp" alt="..." height="300px" width="300px">
+          <button>Add to cart</button>
+          <p>Quick view</p>
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- end product section -->
+
+  <!-- start category section -->
+  <section class="category_container-fluid">
+    <h1>categorys</h1>
+    <div id="category">
+
+      <div class="category-head">
+        <h3>Your choice who you want</h3>
+      </div>
+
+      <div class="category">
+        <h4 class="women">Women's wear</h4>
+        <div class="category-choice">
+          <img src="./public/card1.webp" alt="" width="200px" height="200px">
+        </div>
+        <div class="category-choice">
+
+          <img src="./public/card2.jpg" alt="" width="200px" height="200px">
+        </div>
+        <div class="category-choice">
+
+          <img src="./public/card3.webp" alt="" width="200px" height="200px">
+        </div>
+
+        <div class="category-choice">
+
+          <img src="./public/card4.jpg" alt="" width="200px" height="200px">
+        </div>
+
+        <div class="category-choice">
+          <h4 class="men">Men's wear</h4>
+          <img src="./public/card5.webp" alt="" width="200px" height="200px" style="margin-top: -25px;">
+        </div>
+        <div class="category-choice">
+
+          <img src="./public/card6.webp" alt="" width="200px" height="200px">
+        </div>
+        <div class="category-choice">
+
+          <img src="./public/card7.jpeg" alt="" width="200px" height="200px">
+        </div>
+        <div class="category-choice">
+          <h4 class="winter">Winter wear</h4>
+          <img src="./public/card8.webp" alt="" width="200px" height="200px" style="margin-top: -25px;">
+        </div>
+        <div class="category-choice">
+
+          <img src="./public/card9.jpg" alt="" width="200px" height="200px">
+        </div>
+        <div class="category-choice">
+
+          <img src="./public/card10.webp" alt="" width="200px" height="200px">
+        </div>
+        <div class="category-choice">
+          <h4 class="kids">Kid's wear</h4>
+          <img src="./public/card11.jpeg" alt="" width="200px" height="200px" style="margin-top: -25px;">
+        </div>
+        <div class="category-choice">
+
+          <img src="./public/card12.jpg" alt="" width="200px" height="200px">
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- end category section -->
+  <!-- Strat About us section -->
+  <section class="About_container-fluid">
+    <div id="about">
+      <div class="about_head">
+        <h3>About Us</h3>
+      </div>
+      <div class="about">
+        <div class="about_left">
+          <h6>About Us</h6>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corrupti a, sint aperiam fugiat at,
+            aliquam, similique porro cumque perferendis dignissimos quasi assumenda blanditiis architecto aspernatur
+            expedita quo explicabo consequuntur.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, excepturi. Corporis necessitatibus ratione
+            voluptatibus, ab ea ex est consequatur sint molestias non earum quis modi alias tempora, voluptate nisi.
+            Impedit.
+          </p>
+          <button>Explore</button>
+        </div>
+        <div class="about_right">
+          <img src="./public/About us.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- end about section -->
+  <!-- start contact section -->
+  <section contact_container-fluid>
+    <div id="contact">
+      <div class="head">
+        <h3>Contact Us</h3>
+      </div>
+      <div class="contact">
+        <input type="text" placeholder="Enter Email" id="email">
+        <input type="password" placeholder="Enter Password" id="pass">
+        <button id="submit">submit</button>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- footer section start -->
+
+  <section class="footer_container">
+    <div class="footer">
+
+      <div class="text">
+        <h2>First choice</h2>
+        <p>Trends</p>
+        <p>First Look</p>
+        <p> Offer</p>
+        <p>Quality</p>
+      </div>
+      <div class="text">
+        <h2>Customer</h2>
+        <p>Offer</p>
+        <p> Upto 10% off</p>
+        <p>Next Level</p>
+        <p>Pure</p>
+      </div>
+      <div class="text">
+        <h2>Equal's</h2>
+        <p>Quality</p>
+        <p>Affordable</p>
+        <p>Best Price</p>
+        <p>Level</p>
+      </div>
+      <div class="text">
+        <h2>Contact Us</h2>
+        <p>Email</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+        <p>Watsapp</p>
+
+  </section>
+  </div>
+  <div class="Copyright">
+    <p>Copyright ©2024 All rights reserved | This template is made with <i class="fa-duotone fa-solid fa-heart"></i> by
+      kavita pandia. </p>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
